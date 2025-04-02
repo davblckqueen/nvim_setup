@@ -22,4 +22,38 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 -- Setup lazy.nvim
-require("lazy").setup("bhiero/plugins")
+require("lazy").setup("bhiero/plugins", {
+  ui = {
+      border = "rounded", -- Options: "none", "single", "double", "rounded", "solid", "shadow"
+      title = "Lazy Plugin Manager",  -- Title of the popup window
+      title_pos = "center",  -- Title position: "left", "center", "right"
+      backdrop = 70,
+      -- pills = true, ---@type boolean
+      icons = {
+        cmd = " ",
+        config = "",
+        debug = "● ",
+        event = " ",
+        favorite = " ",
+        ft = " ",
+        init = " ",
+        import = " ",
+        keys = " ",
+        lazy = "󰒲 ",
+        loaded = "●",
+        not_loaded = "○",
+        plugin = " ",
+        runtime = " ",
+        require = "󰢱 ",
+        source = " ",
+        start = " ",
+        task = "✔ ",
+        list = {
+          "●",
+	  "➜",
+	  "★",
+	  "‒",
+        },
+      }
+  }
+})

@@ -1,1 +1,2 @@
 require("bhiero")
+print("hello")

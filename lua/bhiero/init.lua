@@ -1,2 +1,3 @@
 require("bhiero.remap")
-require("bhiero.set")
+require("bhiero.config.lazy")
+print("hello from lua")

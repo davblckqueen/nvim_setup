@@ -1,2 +1,1 @@
 require("bhiero")
-print("hello")

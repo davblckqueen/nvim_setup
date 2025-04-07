@@ -3,7 +3,9 @@ return {
     after = { "mason.nvim", "nvim-lspconfig" },
     config = function()
         require('mason-lspconfig').setup({
-            ensure_installed = {},
+            ensure_installed = {
+
+            },
             handlers = {
                 function(server_name)
                     require('lspconfig')[server_name].setup({
@@ -11,6 +13,13 @@ return {
                     })
                 end,
             },
+            ui = {
+                icons = {
+                    package_installed = "✓",
+                    package_pending = "➜",
+                    package_uninstalled = "✗"
+                }
+            }
         })
     end
 }

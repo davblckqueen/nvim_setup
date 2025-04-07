@@ -28,7 +28,8 @@ return {
 				"java",
 				"json",
 				"dockerfile",
-				"make"
+				"make",
+                "zig"
 			},
 			sync_install = false,
 			highlight = { enable = true },

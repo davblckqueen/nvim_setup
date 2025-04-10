@@ -8,6 +8,8 @@ return {
                 "jdtls",
                 "rust_analyzer",
                 "lemminx",
+                "clangd", 
+                "cmake",
             },
             handlers = {
                 function(server_name)

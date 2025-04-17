@@ -19,7 +19,11 @@ return {
             local buf_map = function(mode, lhs, rhs, opts)
                 opts = opts or {}
                 opts.buffer = bufnr
-                vim.keymap.set(mode, lhs, rhs, opts)
+                vim.keymap.set(
+                    mode,
+                    lhs,
+                    rhs,
+                    opts)
             end
 
             -- LSP mappings
@@ -41,11 +45,19 @@ return {
         -- Configure clangd for C/C++
         lspconfig.clangd.setup({
             capabilities = capabilities,
+            cmd = { "clangd", "--compile-commands-dir=build" },
+            on_attach = on_attach,
         })
 
         -- Configure cmake language server
         lspconfig.cmake.setup({
             capabilities = capabilities,
+            on_attach = on_attach,
+        })
+
+        lspconfig.jdtls.setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
         })
     end
 }

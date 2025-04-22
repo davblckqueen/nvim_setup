@@ -12,6 +12,8 @@ return {
     ---@type neotree.Config?
     opts = {
         -- fill any relevant options here
+        -- jdkfjsdkfsa
+        --
         close_if_last_window = true,
         default_component_configs = {
             git_status = {

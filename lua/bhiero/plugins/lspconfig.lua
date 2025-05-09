@@ -30,7 +30,7 @@ return {
 				local opts = { noremap = true, silent = true, buffer = bufnr }
 				buf_map("n", "gd", vim.lsp.buf.definition, opts) -- Go to definition
 				buf_map("n", "gD", vim.lsp.buf.declaration, opts) -- Go to declaration
-				buf_map("n", "gr", vim.lsp.buf.references, opts) -- Show references
+				buf_map("n", "gr", vim.lsp.buf.references, opts) -- Show lsp_references
 				buf_map("n", "gi", vim.lsp.buf.implementation, opts) -- Go to implementation
 				buf_map("n", "K", vim.lsp.buf.hover, opts) -- Hover information
 				buf_map("n", "<leader>vd", vim.diagnostic.open_float, opts)
@@ -44,6 +44,13 @@ return {
 				buf_map("n", "<leader>pr", function()
 					require("telescope.builtin").lsp_references()
 				end, opts)
+			end,
+		})
+
+		vim.api.nvim_create_autocmd("BufWritePost", {
+			pattern = "*.h",
+			callback = function()
+				vim.lsp.buf.reload_workspace()
 			end,
 		})
 

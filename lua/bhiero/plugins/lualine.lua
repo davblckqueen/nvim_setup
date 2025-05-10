@@ -5,7 +5,14 @@ return {
 		require("lualine").setup({
 			options = {
 				icons_enabled = true,
-				theme = "auto",
+				theme = {
+					normal = {
+						a = { fg = "#2E3440", bg = "#AF5F00", gui = "bold" },
+						b = { fg = "#AF5F00", bg = "#2E3440" },
+						c = { fg = "#AF5F00", bg = "#2E3440" },
+					},
+					-- Define other modes (insert, visual, etc.) similarly
+				},
 				component_separators = { left = "", right = "" },
 				section_separators = { left = "", right = "" },
 				disabled_filetypes = {

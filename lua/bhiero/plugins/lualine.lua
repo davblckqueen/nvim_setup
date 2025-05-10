@@ -9,7 +9,7 @@ return {
 					normal = {
 						a = { fg = "#2E3440", bg = "#AF5F00", gui = "bold" },
 						b = { fg = "#AF5F00", bg = "#2E3440" },
-						c = { fg = "#AF5F00", bg = "#2E3440" },
+						c = { fg = "#AF5F00", bg = "#262626" },
 					},
 					-- Define other modes (insert, visual, etc.) similarly
 				},

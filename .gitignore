@@ -17,3 +17,8 @@ Sessionx.vim
 tags
 # Persistent undo
 [._]*.un~
+# My company pre-commit files
+.pre-commit-config.yaml
+.pre-commit-config.yml
+# Lazy
+lazy-lock.json

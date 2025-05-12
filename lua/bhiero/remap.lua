@@ -1,15 +1,15 @@
-vim .g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.g.mapleader = " "
 
-vim.keymap.set("x", "<leader>p", "\"_dP")
-
--- Copy to my system clipboard
-vim.keymap.set("n", "<leader>y", "\"+y")
-vim.keymap.set("v", "<leader>y", "\"+y")
-vim.keymap.set("n", "<leader>Y", "\"+Y")
-
-vim.keymap.set("n", "<leader>d", "\"_d")
-vim.keymap.set("v", "<leader>d", "\"_d")
-
--- Because of Windows :(
-vim.keymap.set("n", "<leader>v", "<C-v>")
+--vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+-- because windows :/
+vim.keymap.set("n", "<leader>bv", "<C-v>")
+--my split and tabs remaps
+vim.keymap.set("n", "<leader>b%", function()
+	vim.cmd(":split")
+end)
+vim.keymap.set("n", '<leader>b"', function()
+	vim.cmd(":vsplit")
+end)
+-- Buffer navigation
+vim.keymap.set("n", "<C-Right>", "<C-o>", { desc = "Next buffer" })
+vim.keymap.set("n", "<C-Left>", "<C-i>", { desc = "Previous buffer" })

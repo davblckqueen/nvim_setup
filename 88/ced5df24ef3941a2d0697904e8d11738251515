@@ -1,0 +1,32 @@
+lua/bhiero/plugins/lspconfig.lua
+  s_0360079dd30faf::t_6654eab18e1f8e 7-14,18-19,22-35,37
+lua/bhiero/plugins/nvimjava.lua
+  s_0360079dd30faf::t_708b50e97d0299 10-12
+lua/bhiero/plugins/masonnonels.lua
+  s_0360079dd30faf::t_00acd8ab2588b1 22-26,32
+lua/bhiero/plugins/nvimjdtls.lua
+  s_0360079dd30faf::t_27c22fa1d9cdc1 1
+  s_0360079dd30faf::t_3213bad73573db 2
+lsp/stylua.lua
+  s_0360079dd30faf::t_a91bf62e499b96 1-4
+lua/bhiero/plugins/masonlspconfig.lua
+  s_0360079dd30faf::t_e33912cb46c9ab 3,6-8
+lua/bhiero/plugins/mason.lua
+  s_0360079dd30faf::t_bb6bdb7d6e037b 4,8-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "88ced5df24ef3941a2d0697904e8d11738251515",
+  "prompts": {},
+  "sessions": {
+    "s_0360079dd30faf": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "88ffe43f-3c01-43eb-ab48-3962a3d7461b",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "davbckqueen <ing.dsrr@gmail.com>"
+    }
+  }
+}

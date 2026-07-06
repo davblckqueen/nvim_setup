@@ -1,31 +1,12 @@
 return {
     "williamboman/mason-lspconfig.nvim",
-    after = { "mason.nvim", "nvim-lspconfig" },
+    dependencies = { "williamboman/mason.nvim" },
     config = function()
         require('mason-lspconfig').setup({
-            ensure_installed = {
-                -- Language servers
-                "jdtls",
-                "rust_analyzer",
-                "lemminx",
-                "clangd", 
-                "cmake",
+            -- stylua is a formatter managed by null-ls, not an LSP server
+            automatic_enable = {
+                exclude = { "stylua" },
             },
-            handlers = {
-                function(server_name)
-                    local lsp_capabilities = require("cmp_nvim_lsp").default_capabilities()
-                    require('lspconfig')[server_name].setup({
-                        capabilities = lsp_capabilities,
-                    })
-                end,
-            },
-            ui = {
-                icons = {
-                    package_installed = "✓",
-                    package_pending = "➜",
-                    package_uninstalled = "✗"
-                }
-            }
         })
     end
 }

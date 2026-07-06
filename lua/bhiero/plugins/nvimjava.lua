@@ -7,6 +7,8 @@ return {
         "nvim-java/nvim-java-dap",
     },
     config = function()
-        require("java").setup()
+        require("java").setup({
+            jdk = { auto_install = false },
+        })
     end,
 }

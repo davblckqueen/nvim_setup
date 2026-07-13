@@ -9,6 +9,7 @@ return {
                 "lemminx",
                 "clangd",
                 "neocmakelsp",
+                "python-lsp-server",
             },
         })
     end

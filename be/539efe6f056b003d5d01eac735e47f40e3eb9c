@@ -1,0 +1,19 @@
+lua/bhiero/plugins/colorscheme.lua
+  s_0360079dd30faf::t_31057e0322e49c 2,6,10-90
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "be539efe6f056b003d5d01eac735e47f40e3eb9c",
+  "prompts": {},
+  "sessions": {
+    "s_0360079dd30faf": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "88ffe43f-3c01-43eb-ab48-3962a3d7461b",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "davbckqueen <ing.dsrr@gmail.com>"
+    }
+  }
+}

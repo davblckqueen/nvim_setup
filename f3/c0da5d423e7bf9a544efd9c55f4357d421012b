@@ -1,0 +1,25 @@
+lsp/pyright.lua
+  s_0360079dd30faf::t_881dc03b97703c 1-4,7-11,14-17
+  s_0360079dd30faf::t_02700b9c2cbf06 5-6
+  s_0360079dd30faf::t_05e02b9f2a0ea3 12-13
+lua/bhiero/set.lua
+  s_0360079dd30faf::t_94d0b5baac4c32 32-34
+lua/bhiero/plugins/mason.lua
+  s_0360079dd30faf::t_9acf61f592cad9 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "f3c0da5d423e7bf9a544efd9c55f4357d421012b",
+  "prompts": {},
+  "sessions": {
+    "s_0360079dd30faf": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "88ffe43f-3c01-43eb-ab48-3962a3d7461b",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "davbckqueen <ing.dsrr@gmail.com>"
+    }
+  }
+}

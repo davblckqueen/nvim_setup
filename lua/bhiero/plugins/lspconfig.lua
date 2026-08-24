@@ -12,6 +12,24 @@ return {
 			cmd = { "clangd", "--compile-commands-dir=build" },
 		})
 
+		vim.lsp.config("qmlls", {
+			cmd = { "qmlls" },
+			filetypes = { "qml" },
+			root_dir = function(fname)
+				return vim.fs.root(fname, { "CMakeLists.txt", "qmldir", ".git" })
+			end,
+		})
+
+		vim.lsp.config("qmlls", {
+			cmd = { "qmlls" },
+			filetypes = { "qml" },
+			root_dir = function(fname)
+				return vim.fs.root(fname, { "CMakeLists.txt", "qmldir", ".git" }) or vim.fn.fnamemodify(fname, ":h") -- fallback: use file's own directory
+			end,
+		})
+
+		vim.lsp.enable("qmlls")
+
 		vim.api.nvim_create_autocmd("LspAttach", {
 			callback = function(args)
 				local bufnr = args.buf
